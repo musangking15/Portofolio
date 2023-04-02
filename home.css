@@ -82,14 +82,13 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20vw;
-  padding: 10% 0;
+  gap: 30vh;
 }
 
 #home .home-main h1 {
   color: white;
   margin: 1vw 0 1vw 0;
-  font-size: 3.5vw;
+  font-size: 4vw;
   letter-spacing: -3px;
 }
 
@@ -99,75 +98,19 @@ nav ul li a:hover::after {
 
 #home .home-main h3 {
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 #home .home-main h4 {
   color: rgba(239, 30, 107, 0.8);
-  font-size: 2vw;
+  font-size: 3vw;
   letter-spacing: 1px;
 }
 
 #home .home-img img {
-  max-width: 300px;
-  border-radius: 500px 500px 500px 500px;
+  max-width: 50%;
+  max-height: 70%;
+  border-radius: 300px;
   margin-top: 10%;
   margin-left: 20%;
-}
-
-/* About Me */
-#about {
-  min-height: 100vh;
-  width: 100%;
-  padding: 10% 0;
-}
-
-#about .main {
-  width: 1500px;
-  max-width: 95%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
-}
-
-#about .main img {
-  border-radius: 400px;
-  width: 300px;
-  height: 300px;
-  margin-left: 100px;
-  object-fit: cover;
-}
-
-#about .about-text h2 {
-  color: white;
-  font-size: 5vw;
-  margin-bottom: 0.5rem;
-}
-
-#about .about-text h2::after {
-  content: " ";
-  display: block;
-  border-bottom: 0.1rem solid white;
-  transform: scalex(0.45);
-  position: relative;
-  left: -195px;
-  margin-bottom: 1rem;
-}
-
-#about .about-text h5 {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 2vw;
-  margin-bottom: 0.5rem;
-}
-
-#about .about-text h5 span {
-  color: rgb(255, 89, 0);
-}
-
-#about .about-text p {
-  color: whitesmoke;
-  letter-spacing: 1.5px;
-  line-height: 1rem;
 }
