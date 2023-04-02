@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-image: url(./assets/istockphoto-1321288902-170667a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 5vw 2vh 5vw;
+  border-bottom: 0.1rem solid rgba(40, 203, 240, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  color: red;
+  font-size: 5vh;
+  letter-spacing: 0.1vh;
+  cursor: pointer;
+}
+
+nav h2 span {
+  color: white;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 0, 0);
+  transition-delay: 0.2s;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* home */
+
+#home {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20vw;
+  padding: 10% 0;
+}
+
+#home .home-main h1 {
+  color: white;
+  margin: 1vw 0 1vw 0;
+  font-size: 3.5vw;
+  letter-spacing: -3px;
+}
+
+#home .home-main h1 span {
+  color: rgb(255, 0, 0);
+}
+
+#home .home-main h3 {
+  color: white;
+  font-size: 2vw;
+}
+
+#home .home-main h4 {
+  color: rgba(239, 30, 107, 0.8);
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+
+#home .home-img img {
+  max-width: 300px;
+  border-radius: 500px 500px 500px 500px;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+/* About Me */
+#about {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10% 0;
+}
+
+#about .main {
+  width: 1500px;
+  max-width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+#about .main img {
+  border-radius: 400px;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+
+#about .about-text h2 {
+  color: white;
+  font-size: 5vw;
+  margin-bottom: 0.5rem;
+}
+
+#about .about-text h2::after {
+  content: " ";
+  display: block;
+  border-bottom: 0.1rem solid white;
+  transform: scalex(0.45);
+  position: relative;
+  left: -195px;
+  margin-bottom: 1rem;
+}
+
+#about .about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 2vw;
+  margin-bottom: 0.5rem;
+}
+
+#about .about-text h5 span {
+  color: rgb(255, 89, 0);
+}
+
+#about .about-text p {
+  color: whitesmoke;
+  letter-spacing: 1.5px;
+  line-height: 1rem;
+}
