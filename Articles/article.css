@@ -130,9 +130,11 @@ nav ul li a:hover::after {
   text-decoration: none;
   margin-top: 10px;
   transition: 0.4s;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background-color: transparent;
+  background-color: white;
   border: 2px solid crimson;
+  color: crimson;
 }
