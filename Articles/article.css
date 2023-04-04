@@ -73,54 +73,66 @@ nav ul li a:hover::after {
   transform: scaleX(0.5);
 }
 
-/* about */
-#contact {
-  padding-top: 10vw;
+/* articles */
+#articles .card-main {
+  margin: 8vw 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#contact form label {
-  font-size: 1vw;
-  font-weight: bold;
-}
-
-#contact h1 {
-  text-align: center;
-  font-size: 3.5vw;
-  color: white;
-  padding-bottom: 1vw;
-}
-
-#contact h1 span {
-  color: red;
-}
-
-form {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-  padding: 20px;
+#articles .card-main .card {
+  width: 20vw;
+  height: 30vw;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  background-color: rgb(163, 159, 159);
 }
 
-input[type="text"],
-textarea {
+#articles .card-main .card:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  box-shadow: 4px 4px 10px rgb(81, 80, 80);
+}
+
+#articles .card-main .card img {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #ccc;
+  height: 15vw;
+  object-fit: cover;
 }
 
-input[type="reset"] {
-  background-color: #4caf50;
+.card-main .card .card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.card-content p {
+  font-size: medium;
+  font-weight: 500;
+  line-height: 1.3rem;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
+
+.btn {
+  display: inline-block;
+  background-color: crimson;
   color: white;
-  padding: 10px;
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.4s;
 }
 
-input[type="reset"]:hover {
-  background-color: #3e8e41;
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid crimson;
 }
